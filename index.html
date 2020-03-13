@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROG GAME</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/frog.css">
+</head>
+
+<body>
+    <main class="game">
+        <header class="title animated bounceInDown"> </header><br>
+        <section class="screen screen-home animated bounceInUp">
+            <button id="btn-play"></button>
+            <button id="btn-credits"></button>
+        </section>
+
+        <!-- section play -->
+
+        <section class="screen screen-play hide">
+           
+            <div id="frog"> </div>
+            <ul class="hearts">
+                <li class="heart active"></li>
+                <li class="heart active"></li>
+                <li class="heart active"></li>
+            </ul>
+        </section>
+        <!-- section Credits -->
+        <section class="screen screen-credits hide">
+            <div class="bCredits">
+                <h2>Créditos</h2>
+                <p>Diseñado y Desarrollado por Sebastian Corrales</p>
+            </div>
+            <button id="back"></button>
+        </section>
+        <section class="screen screen-game-over hide">
+            <button id="game-over"></button>
+        </section>
+        <!-- Loop Sounds -->
+        <audio id="sound-menu" src="mp3/bgmenufrog.mp3" autoplay="999"></audio>
+        <audio id="sound-play" src="mp3/bgplayfrog.mp3" loop="999"></audio>
+
+    </main>
+    <script src="js/frog.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+body {
+    background-color   : #aaa;
+    background-image   : linear-gradient(to right, rgba(49, 129, 25, 0.493) 50%, transparent 0);
+    background-size    : 180px 100%;
+    background-position: center;
+}
+
+main.game {
+    width : 800px;
+    margin: 40px auto;
+}
+
+main.game header.title {
+    background: url(../img/Rana/Titulo.png) no-repeat center;
+    height    : 80px;
+    width     : 600;
+}
+
+main.game section.hide {
+    display: none;
+}
+
+main.game section.screen-home {
+    background: url(../img/Rana/roadIni.png) no-repeat center;
+    height    : 540px;
+    width     : 800;
+}
+
+main.game section.screen-credits button,
+main.game section.screen-home button {
+    border  : 1px solid crimson;
+    border  : none;
+    height  : 80px;
+    width   : 326px;
+    cursor  : pointer;
+    position: absolute;
+    left    : 248px;
+    width   : 320px;
+}
+
+main.game section.screen-home button#btn-play {
+    background: url(../img/Rana/btnPay.png)no-repeat center;
+    top       : 170px;
+}
+
+main.game section.screen-home button#btn-credits {
+    background: url(../img/Rana/btnCreditos.png)no-repeat center;
+    top       : 270px;
+}
+
+/* Screen Play */
+
+main.game section.screen-play {
+    background: url(../img/Rana/Road.png) no-repeat center;
+    position  : relative;
+    height    : 540px;
+    width     : 800;
+    overflow: hidden;
+}
+
+main.game section.screen-play ul.hearts {
+    list-style: none;
+    padding   : 2px;
+    position  : absolute;
+    top       : -5px;
+    right     : 4px;
+    z-index: 3;
+}
+
+main.game section.screen-play ul.hearts li {
+    display: inline-block;
+    height : 42px;
+    width  : 41px;
+}
+
+/* Corazón Gris */
+main.game section.screen-play ul.hearts li.heart {
+    background: url(../img/Rana/corazonGris.png)no-repeat center;
+    animation : none;
+
+}
+
+/* Corazón Rojo */
+main.game section.screen-play ul.hearts li.heart.active {
+    background: url(../img/Rana/corazonRojo.png)no-repeat center;
+    animation : 1s heartOn ease-in infinite;
+}
+
+@keyframes heartOn {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+main.game section.screen-play div#frog {
+    background: url(../img/Rana/Rana.png) no-repeat center;
+    width     : 47px;
+    height    : 51px;
+    position  : absolute;
+    left      : 370px;
+    top       : 480px;
+    transition: all 0.1s ease-in;
+    z-index: 1;
+}
+
+main.game section.screen-play div.car {
+    background-repeat  : no-repeat;
+    background-position: center;
+    height             : 46px;
+    width              : 156px;
+    position           : absolute;
+    top                : 189px;
+    left               : 368px;
+    z-index: 2;
+}
+
+main.game section.screen-play div.car.car0 {
+    background-image: url(../img/Rana/carroAzul.png);
+}
+
+main.game section.screen-play div.car.car1 {
+    background-image: url(../img/Rana/carroAzul.png);
+}
+
+main.game section.screen-play div.car.car2 {
+    background-image: url(../img/Rana/carroMorado.png);
+}
+
+main.game section.screen-play div.car.car3 {
+    background-image: url(../img/Rana/carroMorado.png);
+}
+
+main.game section.screen-play div.car.car4 {
+    background-image: url(../img/Rana/carroRojo.png);
+}
+
+main.game section.screen-play div.car.car5 {
+    background-image: url(../img/Rana/carroRojo.png);
+}
+
+/* Screen Credits */
+main.game section.screen-credits {
+    background: red;
+    position  : relative;
+    height    : 540px;
+    width     : 800;
+}
