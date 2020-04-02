@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>FROG CROSSING ROAD</title>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/frog.css">
+</head>
+<body>
+	<main class="game">
+		<header class="title animated bounceInDown delay-1s"></header>
+		<!-- section home -->
+		<section class="screen screen-home animated bounceInUp">
+			<button id="btn-play"></button>
+			<button id="btn-credits"></button>
+		</section>
+		<!-- Section Play -->
+		<section class="screen screen-play hide">
+			<div id="frog"></div>
+			<ul class="hearts">
+				<li class="heart active"></li>
+				<li class="heart active"></li>
+				<li class="heart active"></li>
+			</ul>
+		</section>
+		<!-- Section Credits -->
+		<section class="screen screen-credits hide">
+			<button id="btn-back"></button>
+		</section>
+		<!-- Section GameOver -->
+		<section class="screen screen-gameover hide">
+			<button id="btn-try"></button>
+		</section>
+		<section class="screen screen-win hide">
+			<button id="btn-play-win"></button>
+			<button id="btn-credits-win"></button>
+		</section>
+
+		<!-- Loop Sounds -->
+		<audio id="sound-menu" src="mp3/bgmenufrog.mp3" autoplay loop="999999"></audio>
+		<audio id="sound-play" src="mp3/bgplayfrog.mp3" loop="999999"></audio>
+		<audio id="sound-crash" src="mp3/crashfrog.mp3"></audio>
+	</main>
+	<script src="js/frog.js"></script>
+</body>
+</html>
